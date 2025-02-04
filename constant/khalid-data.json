@@ -1,0 +1,43 @@
+[
+    {
+      "id":1,
+      "info":"Khalid Khan",
+      "description":"My full name is khalid khan kakar"
+    }
+    ,
+    {
+      "id":2,
+      "info":"Hometown",
+      "description":"So, basically I from killa saifullah in Pakistan"
+    },
+    {
+      "id":3,
+      "info":"Education",
+      "description":"Currently doing Master's in Computer Science form GC university of Faislabad Pakistan"
+    },
+    {
+      "id":4,
+      "info":"Proffession",
+      "description":"I frontend web developer using ReactJS and NextJS"
+    },
+    {
+      "id":5,
+      "info":"Project",
+      "description":"I have done two project using reactjs 1.Social Media web app 2.Stack overflow clone "
+    },
+    {
+      "id":6,
+      "info":"twitter",
+      "description":"my twitter account link https://twiiter.com/khalidkakar"
+    },
+    {
+      "id":7,
+      "info":"linkdien",
+      "description":"my twitter account link https://linkdien.com/khalidkakar"
+    },
+    {
+      "id":8,
+      "info":"github",
+      "description":"my twitter account link https://github.com/khalidkakar"
+    }
+  ]

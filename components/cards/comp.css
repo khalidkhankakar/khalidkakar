@@ -1,0 +1,57 @@
+.block-container {
+    position: relative;
+    margin: 9px;
+    transition: transform 250ms;
+    perspective: 900px;
+    display: flex;               /* Make block-container a flex container */
+    justify-content: center;     /* Center content horizontally */
+    align-items: center;         /* Center content vertically */
+  }
+  
+  
+   .btn-back {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    width: inherit;
+    height: inherit;
+    transition: 250ms;
+    transform-style: preserve-3d;
+    transform-origin: bottom right;
+    will-change: transform;
+  }
+  
+  .btn-back-1 {
+    background: linear-gradient(135deg, #162f5b -20%, #003389a1 120%);
+    transform: rotateZ(15deg);
+    box-shadow: 16px 0 40px #00105f;
+  }
+  
+  
+  
+  .btn-front {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    width: inherit;
+    height: inherit;
+    background-color: #ffffff33;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    transition: 250ms;
+    transform-style: preserve-3d;
+    transform-origin: top left;
+    overflow: hidden;
+    display: flex;              /* Make btn-front a flex container */
+    justify-content: center;    /* Center content horizontally */
+    align-items: center;        /* Center content vertically */
+  }
+  
+  
+  body .block-container .btn-front .img {
+    max-width: 70%;            /* Ensures the image doesn't overflow its container */
+    max-height: 70%;           /* Ensures the image doesn't overflow its container */
+    object-fit: contain;        /* Maintains the original aspect ratio */
+  }
+  
+  
