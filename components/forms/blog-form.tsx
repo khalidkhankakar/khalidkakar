@@ -17,6 +17,7 @@ import { Input } from "@/components/ui/input"
 import FileUploader from "./file-uploader"
 import TagCard from "../cards/tag-card"
 import Editor from "../editor"
+import { createBlog } from "@/actions/blog.action"
 
 
 
@@ -72,9 +73,13 @@ const BlogForm = () => {
 
   // 2. Define a submit handler.
   function onSubmit(values: z.infer<typeof blogSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
-    console.log(values)
+    const formData = new FormData();
+    formData.append('image', values.image as File);
+    formData.append('title', values.title);
+    formData.append('tags', JSON.stringify(values.tags));
+    formData.append('content', values.content);
+    const newBlog = createBlog(formData).then((res)=>console.log(res)).catch((err)=>console.log(err))
+    // console.log(values)
   }
 
   return (
