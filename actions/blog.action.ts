@@ -68,3 +68,17 @@ export const createBlog = async (formData: FormData) => {
     return { success: "Blog created successfully" }
 
 }
+
+export const getBlog = async (slug: string) => {
+    await connectDB();
+    const blog = await Blog.findOne({ slug }).populate('tags')
+    console.log(blog)
+    return blog;
+}
+
+export const getAllBlogs = async () => {
+    await connectDB();
+    // exclude content filed
+    const blogs = await Blog.find().populate('tags').select('-content')
+    return blogs;
+}

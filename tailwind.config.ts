@@ -79,6 +79,9 @@ const config: Config = {
 			fontFamily: {
 				sans: [
 					'var(--font-sans)'
+				],
+				lobster: [
+					'var(--font-lobster)'
 				]
 			},
 			keyframes: {

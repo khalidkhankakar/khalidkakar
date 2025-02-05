@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Lobster } from "next/font/google";
 import "./globals.css";
 import './prosemirror.css'
 
@@ -8,6 +8,11 @@ const inter = Inter({
   variable: '--font-sans'
 });
 
+const lobster = Lobster({
+  subsets: ["latin"],
+  variable: '--font-lobster',
+  weight: ['400']
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,7 +29,7 @@ export default function RootLayout({
       <head>
         <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
       </head>
-      <body className={`dark ${inter.className} bg-dark-3`} >
+      <body className={`dark ${inter.className} ${lobster.variable} bg-dark-3`} >
         {children}
       </body>
     </html>

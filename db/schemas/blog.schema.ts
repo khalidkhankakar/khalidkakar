@@ -1,7 +1,7 @@
 import { model, models, Schema } from "mongoose";
 
 
-interface BlogSchema {
+export interface BlogSchema {
     slug: string;
     title: string;
     content: string;
