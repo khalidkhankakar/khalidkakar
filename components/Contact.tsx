@@ -5,12 +5,12 @@ const Contact = () => {
   return (
     <div id="#contact" className="relative m-auto my-8 flex max-w-[90vw] flex-col items-start justify-start md:max-w-2xl lg:max-w-[80vw]">
       <h2 className="h2-bold text-white">
-        Get <span className="text-pink-1">in Touch</span>
+        Get <span className="text-pink-1 font-lobster ">in Touch</span>
       </h2>
 
       <div className="max-w-[90vw] text-white md:max-w-2xl lg:max-w-[80vw] mx-auto">
         <h1 className="max-w-[95%] text-center text-[36px] font-semibold leading-[2.5rem] tracking-tight md:text-[48px] md:leading-[3.2rem]">
-          Take Your Digital <span className="text-purple-2">Presence</span> to
+          Take Your Digital <span className="text-purple-2 font-lobster">Presence</span> to
           New Heights
         </h1>
         <p className="my-2 max-w-[95%] text-center text-[15px] font-light tracking-wide text-purple-1 md:text-[19px]">

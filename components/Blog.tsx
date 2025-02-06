@@ -7,7 +7,7 @@ const Blog = () => {
   return (
     <div className="m-auto my-8 flex max-w-[90vw] flex-col items-start justify-start md:max-w-2xl lg:max-w-[80vw]">
       <h2 className="h2-bold text-white">
-        Latest <span className="text-cyan-1">Blog Post</span>
+        Latest <span className="text-cyan-1 font-lobster">Blog Post</span>
       </h2>
       <div className="mt-6 grid grid-cols-1 justify-center gap-5 lg:grid-cols-2">
         {blogCards.map(

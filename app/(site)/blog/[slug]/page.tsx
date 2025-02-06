@@ -1,5 +1,6 @@
 import { getBlog } from '@/actions/blog.action';
 import BlogDetails from '@/components/blog-details';
+import { Metadata, ResolvingMetadata } from 'next';
 import { redirect } from 'next/navigation';
 import React from 'react'
 
@@ -8,6 +9,27 @@ interface Props {
         slug: string
     }
 }
+
+ 
+export async function generateMetadata(
+    { params }: Props,
+    parent: ResolvingMetadata
+  ): Promise<Metadata> {
+    // read route params
+    const slug = (await params).slug
+   
+    // fetch data
+    const blog = await getBlog(slug).then((blog) => blog);
+    
+    return {
+      title: blog.title,
+      openGraph: {
+        title: blog.title,
+        description: blog.description,
+      },
+    }
+  }
+   
 const page = async ({ params }: Props) => {
     const { slug } = params;
 

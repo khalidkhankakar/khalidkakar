@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <header>
       <nav
-        className={`absolute top-0 z-50 flex w-full flex-col py-2rounded-md bg-gradient-to-r from-[#0C0E23] to-[#04071D] px-3 py-4 border-b border-white text-white  md:hidden`}
+        className={`absolute  top-0 z-50 flex w-full flex-col py-2rounded-md bg-gradient-to-r from-[#0C0E23] to-[#04071D] px-3 py-4 border-b border-white text-white  md:hidden`}
       >
         <div className="flex items-center justify-between">
         <Link href={'/'} className="text-white font-semibold font-lobster tracking-widest ">KhalidKakar </Link>

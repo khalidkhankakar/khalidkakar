@@ -11,7 +11,7 @@ const HeroSection = () => {
         </p>
         <h1 className="max-w-[95%] text-center text-[48px] font-bold leading-[3.5rem] tracking-tight md:text-[72px] md:leading-[5rem]">
           Building Robust Websites for Tomorrow&apos;s{" "}
-          <span className="text-purple-2">Challenges</span>
+          <span className="text-purple-2 font-lobster">Challenges</span>
         </h1>
         <p className="my-2 max-w-[95%] text-center text-[15px] font-light tracking-wide text-purple-1 md:text-[19px]">
           What’s up! I’m Khalid Kakar, a Next.js Developer in Pakistan{" "}
