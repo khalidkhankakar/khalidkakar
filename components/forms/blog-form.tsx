@@ -18,16 +18,23 @@ import FileUploader from "./file-uploader"
 import TagCard from "../cards/tag-card"
 import Editor from "../editor"
 import { createBlog } from "@/actions/blog.action"
-
+import { Textarea } from "../ui/textarea"
+import { useTransition } from "react"
+import { Loader } from "lucide-react"
+import { toast } from "sonner"
+import { useRouter } from "next/navigation"
 
 
 const BlogForm = () => {
 
+  const [isPending, startTransition] = useTransition()
+  const router = useRouter()
   const form = useForm<z.infer<typeof blogSchema>>({
     resolver: zodResolver(blogSchema),
     defaultValues: {
       image: undefined,
       title: "",
+      description: "",
       tags: [],
       content: "",
     },
@@ -78,8 +85,15 @@ const BlogForm = () => {
     formData.append('title', values.title);
     formData.append('tags', JSON.stringify(values.tags));
     formData.append('content', values.content);
-    const newBlog = createBlog(formData).then((res)=>console.log(res)).catch((err)=>console.log(err))
-    // console.log(values)
+    formData.append('description', values.description);
+    startTransition(()=>{
+      createBlog(formData).then((res)=>{
+        toast(res.message);
+        return router.push('/blog')
+      }).catch((err)=>{
+        toast(err.message)
+      })
+    }) 
   }
 
   return (
@@ -105,7 +119,7 @@ const BlogForm = () => {
             <FormItem>
               <FormLabel>New Blog title here...</FormLabel>
               <FormControl>
-                <Input type="text"  {...field} />
+                <Input type="text" placeholder="Runtime of the Javascript"  {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -137,6 +151,19 @@ const BlogForm = () => {
             </FormItem>
           )}
         />
+         <FormField
+          control={form.control}
+          name="description"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Brife blog description...</FormLabel>
+              <FormControl>
+                <Textarea placeholder="This is a blog about javascript" {...field} />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
         <FormField
           control={form.control}
           name="content"
@@ -150,7 +177,7 @@ const BlogForm = () => {
             </FormItem>
           )}
         />
-        <Button type="submit" className="w-full  rounded-xl text-lg">Create blog</Button>
+        <Button type="submit" className="w-full  rounded-xl text-lg" >{isPending ? <Loader className="animate-spin" /> : "Create Blog"}</Button>
       </form>
     </Form>
   )

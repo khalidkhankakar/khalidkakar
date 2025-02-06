@@ -17,7 +17,7 @@ const page = async ({ params }: Props) => {
 
     return (
         <div className='min-h-screen overflow-y-auto max-w-[85%] lg:max-w-5xl mx-auto px-4  py-20 text-white'>
-         <BlogDetails _id={blog._id} title={blog.title} content={blog.content} tags={blog.tags} imageUrl={blog.imageUrl || "/docker.png"} createdAt={blog.createdAt} />
+         <BlogDetails _id={blog._id} title={blog.title} content={blog.content} tags={blog.tags} imageUrl={blog.image} createdAt={blog.createdAt} />
         </div>
     )
 }

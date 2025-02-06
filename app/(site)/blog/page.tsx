@@ -4,11 +4,12 @@ import React from 'react'
 
 const page = async () => {
   const blogs = await getAllBlogs();
+console.log(blogs)
   return (
     <div className='min-h-screen overflow-y-auto max-w-[85%] lg:max-w-4xl mx-auto   py-20 text-white '>
       <div className='flex items-center flex-col gap-y-3 '>
         {
-          blogs.map((blog) => (<ArticalCard key={blog._id} slug={blog.slug} title={blog.title} imageUrl={blog.imageUrl || "/docker.png"} tags={blog.tags} />))
+          blogs.map((blog) => (<ArticalCard  key={blog._id} slug={blog.slug} title={blog.title} imageUrl={blog.image} description={blog.description} tags={blog.tags} />))
         }
 
       </div>

@@ -7,17 +7,18 @@ interface ArticalCardProps {
     slug:string
     title: string;
     imageUrl: string;
+    description:string;
     tags: { _id: ObjectId; name: string }[];
 }
-export default function ArticalCard({slug, title, imageUrl, tags}: ArticalCardProps) {
+export default function ArticalCard({slug,description, title, imageUrl, tags}: ArticalCardProps) {
 
   return (
-    <div className="flex flex-col md:flex-row items-center bg-dark-2 text-white p-4 md:p-6 rounded-sm shadow-lg  mx-auto">
+    <div className="flex flex-col w-full md:flex-row items-center bg-dark-2 text-white p-4 md:p-6 rounded-sm shadow-lg  mx-auto">
       {/* Image */}
       <div className="w-full md:w-1/3">
         <div className="relative w-full h-60 rounded-lg overflow-hidden">
           <Image
-            src="/docker.png" // Ensure this path is correct
+            src={imageUrl} // Ensure this path is correct
             alt="Enums"
             layout="fill"
             objectFit="cover"
@@ -29,7 +30,7 @@ export default function ArticalCard({slug, title, imageUrl, tags}: ArticalCardPr
       <div className="md:ml-6 mt-4 md:mt-0 w-full md:w-2/3 text-center md:text-left">
        <Link href={`/blog/${slug}`}><h2 className="text-xl font-bold hover:underline">{title}</h2></Link> 
         <p className="text-gray-400 mt-2 text-sm">
-          Enums in TypeScript can be confusing, with differences between numeric and string enums causing unexpected behaviors.
+          {description}
         </p>
         <div className="flex items-center gap-2 my-3 justify-center md:justify-normal  flex-wrap ">
             {
