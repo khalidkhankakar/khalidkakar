@@ -17,15 +17,32 @@ import { Input } from "@/components/ui/input"
 import FileUploader from "./file-uploader"
 import TagCard from "../cards/tag-card"
 import Editor from "../editor"
-import { createBlog } from "@/actions/blog.action"
+import { createBlog, editBlog } from "@/actions/blog.action"
 import { Textarea } from "../ui/textarea"
 import { useTransition } from "react"
 import { Loader } from "lucide-react"
 import { toast } from "sonner"
 import { useRouter } from "next/navigation"
+import { JSONContent } from "novel"
 
+interface Props{
+  blogId?: string
+  blogTitle?: string
+  blogContent?: string
+  blogTags?: any[]
+  blogImage?: string
+  blogDesc?:string
+  isEdit?:boolean
+}
 
-const BlogForm = () => {
+const BlogForm = ({
+  blogId,
+  blogTitle,
+  blogContent,
+  blogTags,
+  blogImage, 
+  blogDesc,
+  isEdit = false}:Props) => {
 
   const [isPending, startTransition] = useTransition()
   const router = useRouter()
@@ -33,10 +50,11 @@ const BlogForm = () => {
     resolver: zodResolver(blogSchema),
     defaultValues: {
       image: undefined,
-      title: "",
-      description: "",
-      tags: [],
-      content: "",
+      title: blogTitle || "",
+      description: blogDesc || "",
+      // todo: fix this type 
+      tags: blogTags || [],
+      content: blogContent || "",
     },
   })
 
@@ -87,6 +105,19 @@ const BlogForm = () => {
     formData.append('content', values.content);
     formData.append('description', values.description);
     startTransition(()=>{
+
+      if(isEdit && blogId){
+        console.log('yes')
+        editBlog(blogId, formData).then((res)=>{
+          toast(res?.message);
+          // router.push('/blog') 
+          return 
+        }).catch((err)=>{
+          toast(err.message)
+        })
+        return 
+      }
+
       createBlog(formData).then((res)=>{
         toast(res.message);
         return router.push('/blog')
@@ -106,7 +137,7 @@ const BlogForm = () => {
             <FormItem>
               <FormLabel>Add your blog cover image</FormLabel>
               <FormControl>
-                <FileUploader fileOnChange={field.onChange} />
+                <FileUploader url={blogImage} fileOnChange={field.onChange} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -171,7 +202,7 @@ const BlogForm = () => {
             <FormItem>
               <FormLabel>Write your blog content here...</FormLabel>
               <FormControl>
-                <Editor onChange={field.onChange} />
+                <Editor initialValue={field.value as JSONContent} onChange={field.onChange} />
               </FormControl>
               <FormMessage />
             </FormItem>

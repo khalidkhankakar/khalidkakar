@@ -18,3 +18,4 @@ export const blogSchema = z.object({
         message: "Blog content is required",
     })
 })
+

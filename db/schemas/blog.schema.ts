@@ -1,7 +1,8 @@
+import { Document } from "mongoose";
 import { model, models, Schema } from "mongoose";
 
 
-export interface BlogSchema {
+export interface IBlog {
     slug: string;
     title: string;
     content: string;
@@ -12,7 +13,8 @@ export interface BlogSchema {
     upvotes?: number;
 }
 
-const blogSchema = new Schema<BlogSchema>({
+export interface IBlogDoc extends IBlog, Document {}
+const blogSchema = new Schema<IBlog>({
     slug: { type: String, required: true, unique: true },
     title: { type: String, required: true },
     content: { type: String, required: true },
@@ -23,6 +25,6 @@ const blogSchema = new Schema<BlogSchema>({
     upvotes: { type: Number, default: 0 },
 }, { timestamps: true })
 
-const Blog = models?.Blog || model<BlogSchema>('Blog', blogSchema);
+const Blog = models?.Blog || model<IBlog>('Blog', blogSchema);
 
 export default Blog

@@ -1,11 +1,12 @@
 import { getAllBlogs } from '@/actions/blog.action';
 import ArticalCard from '@/components/cards/artical-card'
+import { HeroHighlight } from '@/components/ui/hero-highlight';
 import React from 'react'
 
 const page = async () => {
   const blogs = await getAllBlogs();
-console.log(blogs)
   return (
+    <HeroHighlight className='w-full'>
     <div className='min-h-screen overflow-y-auto max-w-[85%] lg:max-w-4xl mx-auto   py-20 text-white '>
       <div className='flex items-center flex-col gap-y-3 '>
         {
@@ -13,7 +14,9 @@ console.log(blogs)
         }
 
       </div>
+   
     </div>
+    </HeroHighlight>
   )
 }
 

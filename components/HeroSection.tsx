@@ -5,7 +5,7 @@ import { BackgroundBeams } from "./ui/background-beams";
 const HeroSection = () => {
   return (
     <section className="relative z-40 flex h-screen max-h-screen flex-col items-center justify-center bg-dark-3 text-white">
-      <div className="max-w-[90vw] md:max-w-2xl lg:max-w-[80vw]">
+      <div className="py-3 max-w-[90vw] md:max-w-2xl lg:max-w-[80vw]">
         <p className="text-center text-[16px] font-thin uppercase tracking-wide text-purple-1 md:tracking-normal">
           Dynamic Excellence with Next.js
         </p>

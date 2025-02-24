@@ -1,5 +1,5 @@
 import mongoose, { Mongoose } from 'mongoose'
-
+import '@/db/schemas/index'
 const MONGODB_URI = process.env.MONGODB_URI
 
 if (!MONGODB_URI) {

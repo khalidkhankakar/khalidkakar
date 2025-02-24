@@ -5,6 +5,9 @@ export interface ITagBlog {
   blog: Types.ObjectId;
 }
 
+export interface ITagBlogDoc extends ITagBlog, Document {}
+
+
 const TagBlogSchema = new Schema<ITagBlog>(
   {
     tag: { type: Schema.Types.ObjectId, ref: "Tag", required: true },

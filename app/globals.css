@@ -12,6 +12,9 @@
     .card-style2{
         @apply bg-gradient-to-r from-[#0C0E23] to-[#04071D] px-5 py-7;
     }
+    .bg-gradient {
+      @apply bg-gradient-to-r from-[#04071D]/80 to-[#0C0E23]/80;
+    }
 }
 
 body{
