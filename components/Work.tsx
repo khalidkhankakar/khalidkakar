@@ -9,7 +9,7 @@ const Work = () => {
       <h2 className="h2-bold text-white">
         My <span className="text-pink-1 font-lobster">Work Experience</span>
       </h2>
-      <div className='mt-6 w-full mx-auto flex  flex-wrap  gap-5'>
+      <div className='mt-6 w-full mx-auto flex justify-center items-center  flex-wrap  gap-5'>
         {
             experinceSection.map(({title, desc, img}:{title:string,desc:string,img:string})=>(
                 <Card key={title} title={title} desc={desc} img={img}/>

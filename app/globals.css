@@ -2,6 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+/* Custom scrollbar for WebKit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+/* Track (the area behind the thumb) */
+::-webkit-scrollbar-track {
+  background: #000319; /* Light gray background */
+  border-radius: 10px;  /* Rounded corners */
+}
+
+/* Scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #C2A8E8; /* Green color */  /* Rounded corners */
+}
+
+/* Hover effect on the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: #C2A8E8; /* Slightly darker green */
+}
+
+
 @layer utilities {
     .h2-bold{
         @apply font-semibold font-sans md:text-[40px] text-[27px];
