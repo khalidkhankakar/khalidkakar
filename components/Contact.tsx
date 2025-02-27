@@ -3,7 +3,7 @@ import { SparklesCore } from "./ui/sparkles";
 
 const Contact = () => {
   return (
-    <div id="#contact" className="relative m-auto my-8 flex max-w-[90vw] flex-col items-start justify-start md:max-w-2xl lg:max-w-[80vw]">
+    <div id="contact" className="relative m-auto my-8 flex max-w-[90vw] flex-col items-start justify-start md:max-w-2xl lg:max-w-[80vw]">
       <h2 className="h2-bold text-white">
         Get <span className="text-pink-1 font-lobster ">in Touch</span>
       </h2>
