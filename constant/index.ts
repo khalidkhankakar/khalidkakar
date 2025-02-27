@@ -1,11 +1,6 @@
 
 export const experinceSection = [
   {
-    title: "Frontend Developer",
-    desc: "In the past year, I worked as a frontend web developer at Technocloud Company in Lahore.",
-    img: "/developer.svg",
-  },
-  {
     title: "ReactJS Inter",
     desc: "I completed three months internship as a React.js developer at Technocloud Company in Lahore.",
     img: "/code.svg",
@@ -132,3 +127,56 @@ export const socialContacts =[
 ]
 
 
+
+
+const frontendEndStack = [
+  "typescript",
+  "javascript",
+  "react",
+  "nextdotjs",
+  "tailwindcss",
+  "html5",
+  "css3",
+  "shadcn",
+  "redux",
+  "zustand",
+  "materialui",
+  "shadcnui",
+  "vite",
+  "eslint",
+  "prettier"
+];
+
+const backendEndStack = [
+  "nodedotjs",
+  "express",
+  "nextdotjs",
+  "hono",
+  "bun",
+  "mongodb",
+  "postgresql",
+  "prisma",
+  "drizzle",
+  "typescript",
+  "javascript",
+];
+
+const prodictivityStack = [
+  "docker",
+  "git",
+  "github",
+  "npm",
+  "pnpm",
+  "yarn",
+  "trello",
+  "notion",
+  "figma",
+  "postman",
+  "openai",
+  "visualstudiocode",
+  "vercel",
+  "googlechrome",
+  "canva"
+];
+
+export { frontendEndStack, backendEndStack, prodictivityStack };

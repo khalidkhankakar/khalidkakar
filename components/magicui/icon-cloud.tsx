@@ -61,9 +61,17 @@ export function IconCloud({ icons, images }: IconCloudProps) {
           const img = new Image();
           img.crossOrigin = "anonymous";
           img.src = items[index] as string;
+
+          img.ondragover = ()=>{
+              console.log(items[index] , index, 'dragover')
+
+          }
+          img.onmouseenter = ()=>{
+            console.log(items[index] , index, 'mouseenter')
+          }
           img.onload = () => {
             offCtx.clearRect(0, 0, offscreen.width, offscreen.height);
-
+            // console.log( items[index] , index)
             // Create circular clipping path
             offCtx.beginPath();
             offCtx.arc(20, 20, 20, 0, Math.PI * 2);
