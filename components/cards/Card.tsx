@@ -1,9 +1,11 @@
+import { MousePointer2, PointerIcon } from "lucide-react";
+import { Pointer } from "../magicui/pointer";
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 import Image from "next/image";
 
 const Card = ({ title, desc, img }:{title:string,desc:string,img:string}) => {
   return (
-    <div className="card-style2 border-t-4 border-t-[#272A3C]  rounded-lg font-sans w-[90%] lg:w-[45%] flex-shrink-0 ">
+    <div className="card-style2 border-t-4 border-t-[#272A3C]  rounded-[1rem] font-sans w-[90%] lg:w-[45%] flex-shrink-0 ">
             <div>
           {/* image */}
           <Image
@@ -27,6 +29,11 @@ const Card = ({ title, desc, img }:{title:string,desc:string,img:string}) => {
           </p>
         </div>
       </div>
+      <Pointer>
+      <MousePointer2 className="text-blue-500 fill-blue-500" />
+         
+  
+        </Pointer>
     </div>
   );
 };

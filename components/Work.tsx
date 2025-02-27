@@ -5,7 +5,7 @@ import Card from './cards/Card'
 
 const Work = () => {
   return (
-    <div className="m-auto my-8  flex max-w-[90vw] flex-col items-start justify-start md:max-w-2xl lg:max-w-[80vw]">
+    <div className="m-auto my-16  flex max-w-[90vw] flex-col items-start justify-start md:max-w-2xl lg:max-w-[80vw]">
       <h2 className="h2-bold text-white">
         My <span className="text-pink-1 font-lobster">Work Experience</span>
       </h2>
