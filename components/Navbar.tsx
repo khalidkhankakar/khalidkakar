@@ -81,7 +81,7 @@ const Navbar = () => {
       </div>
 
       {/* destop navigation */}
-      <nav className="fixed  top-4 left-1/2 translate-x-[-50%] z-[100] hidden w-3/4 lg:w-1/2 rounded-xl items-center justify-around bg-gradient-to-r from-[#0c0e23ad]/40 to-[#04071dc5]/40 px-2 py-2  md:flex border ">
+      <nav className="fixed  top-4 left-1/2 translate-x-[-50%] z-[100] hidden w-3/4 lg:w-1/2 rounded-3xl items-center justify-around bg-gradient-to-r from-[#0c0e23ad]/40 to-[#04071dc5]/40 px-2 py-2  md:flex border ">
         <div>
           <Link href={'/'} className="text-white font-semibold font-lobster text-xl tracking-widest ">KhalidKakar</Link>
         </div>

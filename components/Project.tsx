@@ -1,12 +1,16 @@
 import ProjectCard from "./cards/ProjectCard";
 import { projectCardsArr } from "@/constant";
+import { BoxReveal } from "./magicui/box-reveal";
 
 const Project = () => {
   return (
     <div className="m-auto my-8 flex max-w-[90vw] flex-col items-start justify-start md:max-w-2xl lg:max-w-[80vw]">
-      <h2 className="h2-bold text-white">
-        My <span className="text-pink-1 font-lobster">Projects</span>
-      </h2>
+
+      <BoxReveal boxColor={"#da1beb "} duration={0.5}>
+        <h2 className="h2-bold text-white">
+          My <span className="text-pink-1 font-lobster">Projects</span>
+        </h2>
+      </BoxReveal>
 
       <div className="mt-6 grid w-full grid-cols-1 justify-center gap-5 lg:grid-cols-2">
         {projectCardsArr.map((project) => (

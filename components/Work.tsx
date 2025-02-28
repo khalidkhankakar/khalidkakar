@@ -2,18 +2,22 @@
 
 import { experinceSection } from '@/constant'
 import Card from './cards/Card'
+import { BoxReveal } from './magicui/box-reveal'
 
 const Work = () => {
   return (
     <div className="m-auto my-16  flex max-w-[90vw] flex-col items-start justify-start md:max-w-2xl lg:max-w-[80vw]">
-      <h2 className="h2-bold text-white">
-        My <span className="text-pink-1 font-lobster">Work Experience</span>
-      </h2>
+      <BoxReveal boxColor={"#da1beb"} duration={0.5}>
+        <h2 className="h2-bold text-white">
+          My <span className="text-pink-1 font-lobster">Work Experience</span>
+        </h2>
+      </BoxReveal>
+
       <div className='mt-6 w-full mx-auto flex justify-center items-center  flex-wrap  gap-5'>
         {
-            experinceSection.map(({title, desc, img}:{title:string,desc:string,img:string})=>(
-                <Card key={title} title={title} desc={desc} img={img}/>
-            ))
+          experinceSection.map(({ title, desc, img }: { title: string, desc: string, img: string }) => (
+            <Card key={title} title={title} desc={desc} img={img} />
+          ))
         }
       </div>
 

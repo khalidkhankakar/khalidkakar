@@ -1,5 +1,6 @@
 import { frontendEndStack, backendEndStack, prodictivityStack } from "@/constant";
 import { IconCloud } from "@/components/magicui/icon-cloud";
+import { BoxReveal } from "./magicui/box-reveal";
 
 const DevStack = () => {
   // Function to generate icon URLs from Simple Icons CDN
@@ -13,9 +14,11 @@ const DevStack = () => {
 
   return (
     <div className="m-auto my-8 flex max-w-[90vw] flex-col items-start justify-start md:max-w-2xl lg:max-w-[80vw]">
+      <BoxReveal boxColor={"#f4ac24"} duration={0.5}>
       <h2 className="h2-bold text-white">
         My <span className="text-orange-1 font-lobster">Dev Stack</span>
       </h2>
+      </BoxReveal>
 
       <div className="flex p-3 flex-wrap gap-3 justify-center w-full">
         {/* Frontend Stack */}
