@@ -1,7 +1,8 @@
 import Link from "next/link"
+import { MagicCard } from "../magicui/magic-card";
 const BlogCard = ({ title, desc, tags , readTime,link}:{title:string,desc:string,tags:string[], readTime:string,link:string}) => {
   return (
-    <Link href={link} className=" rounded-lg card-style2 border-t-4 border-t-[#272A3C]  font-sans">
+    <MagicCard  className=" bg-dark-2 rounded-[1rem] card-style2 border-t-4  font-sans">
       <div className="flex flex-col items-start justify-center space-x-0 md:items-center md:space-x-3">
         <div>
           {/* heading */}
@@ -28,7 +29,7 @@ const BlogCard = ({ title, desc, tags , readTime,link}:{title:string,desc:string
       </div>
 
 
-    </Link>
+    </MagicCard>
   );
 };
 

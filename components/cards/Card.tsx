@@ -30,7 +30,7 @@ const Card = ({ title, desc, img }:{title:string,desc:string,img:string}) => {
         </div>
       </div>
       <Pointer>
-      <MousePointer2 className="text-blue-500 fill-blue-500" />
+      <MousePointer2 className="text-red-500 fill-red-500" />
          
   
         </Pointer>
