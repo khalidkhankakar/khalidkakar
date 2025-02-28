@@ -18,9 +18,9 @@ const ProjectCard = ({
   projectTechs: string[];
 }) => {
   return (
-    <div className="card-style rounded-xl ">
+    <div className="card-style2 rounded-[1rem] p-0 shadow-md border-t-4 ">
       {/* project Img */}
-      <div className="rounded-lg bg-slate-800 p-3">
+      <div className="bg-slate-800 p-3 rounded-[1rem] ">
         <Image
           src={projectImg}
           width={500}
@@ -30,12 +30,12 @@ const ProjectCard = ({
         />
       </div>
       {/* project explaination */}
-      <div className="my-3">
+      <div className="my-2 p-3">
         <h3 className="text-[20px] font-bold tracking-wide text-white md:text-[32px]">
           {projectName}
         </h3>
         <p className="text-[10px] font-light tracking-wider text-purple-1 md:text-[12px] md:tracking-wide">
-          {projectExplain}
+          {projectExplain.substring(0, 100)}
         </p>
         <div className="mt-3 flex items-center justify-between">
           {/* used techs */}

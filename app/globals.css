@@ -32,7 +32,7 @@ html {
         @apply font-semibold font-sans md:text-[40px] text-[27px];
     }
     .card-style{
-        @apply border border-[#272A3C] bg-gradient-to-r from-[#0C0E23] to-[#04071D] px-4 py-3;
+        @apply border border-[#272A3C] bg-gradient-to-r from-[#0C0E23] to-[#04071D];
     }
     .card-style2{
         @apply bg-gradient-to-r from-[#0C0E23] to-[#04071D] px-5 py-7;
