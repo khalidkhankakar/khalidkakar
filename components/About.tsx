@@ -6,11 +6,6 @@ import { TextAnimate } from "./magicui/text-animate";
 const About = () => {
   return (
     <div id="#about" className="m-auto flex max-w-[90vw] flex-col items-start justify-start md:max-w-2xl lg:max-w-[80vw]">
-      <BoxReveal boxColor={"#12fc37"} duration={0.5}>
-        <h2 className="h2-bold text-white">
-          Explore <span className="text-green-1 font-lobster">Khalid&apos;s journey</span>
-        </h2>
-      </BoxReveal>
 
       <div className="rounded-xl  px-4 py-3 flex flex-col items-center justify-center">
         <div className=" relative w-full my-2 ">

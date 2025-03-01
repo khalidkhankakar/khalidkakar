@@ -6,11 +6,7 @@ const Contact = () => {
   return (
     <div id="contact" className="relative m-auto my-8 flex max-w-[90vw] flex-col items-start justify-start md:max-w-2xl lg:max-w-[80vw]">
 
-      <BoxReveal boxColor={"#da1beb "} duration={0.5}>
-        <h2 className="h2-bold text-white">
-          Get <span className="text-pink-1 font-lobster">in Touch</span>
-        </h2>
-      </BoxReveal>
+     
 
       <div className="max-w-[90vw] text-white md:max-w-2xl lg:max-w-[80vw] mx-auto">
         <h1 className="max-w-[95%] text-center text-[36px] font-semibold leading-[2.5rem] tracking-tight md:text-[48px] md:leading-[3.2rem]">
