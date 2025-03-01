@@ -1,6 +1,6 @@
-import ProjectCard from "./cards/ProjectCard";
 import { projectCardsArr } from "@/constant";
 import { BoxReveal } from "./magicui/box-reveal";
+import { ProjectCard } from "./cards/project-card";
 
 const Project = () => {
   return (
