@@ -37,9 +37,9 @@ export function ProjectCard(
                 <CardItem
                     as="p"
                     translateZ="60"
-                    className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+                    className="text-neutral-500 text-sm  mt-2 dark:text-neutral-300"
                 >
-                    {projectExplain.substring(0, 100)}
+                    {projectExplain.substring(0, 150)}...
                 </CardItem>
                 <CardItem translateZ="100" className="w-full mt-4">
                     <Image
@@ -64,7 +64,7 @@ export function ProjectCard(
                     ))}
                 </div>
 
-                <div className="flex justify-between items-center mt-16">
+                <div className="flex justify-between items-center mt-8">
                     <CardItem
                         translateZ={20}
                         as={Link}

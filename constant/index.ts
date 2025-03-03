@@ -82,21 +82,21 @@ export const devTechs = [
 
 export const projectCardsArr = [
   {
-    projectName: "Social Media WebApp",
+    projectName: "💻 CodeOverFlow",
     projectExplain:
-      "I successfully developed a roboust social media project leveraging NextJS, ReactJS and Tailwind CSS with Appwirte as the database. This cutting edge platform enables user to perform comprehensive CRUD operations on posts, empowering them to create, save and manage content with ease. This project showcases my expertise in buiding scalable, efficent, and user-friendly applications.",
-    projectImg: "/nextjs.png",
-    projectLink: "https://iscroll-seven.vercel.app/",
-    projectCodeLink: "https://github.com/khalidkhankakar/iscroll",
+      "Code Overflow is a full-featured platform inspired by Stack Overflow, allowing users to ask and answer programming-related questions. It includes comprehensive functionalities like question and answer creation, a voting system, advanced search with robust filtering, user profiles, and secure authentication.",
+    projectImg: "/project1.png",
+    projectLink: "https://codeoverflow-eta.vercel.app/",
+    projectCodeLink: "https://github.com/khalidkhankakar/codeoverflow",
     projectTechs: ["/nextjs.png", "/appwrite.png", "/reactjs.png","/tailwindcss.png"],
   },
   {
-    projectName: "Stack Overflow clone",
+    projectName: "🔥 FireGrid",
     projectExplain:
-      "I build the iconic Stack Overflow platform as 'Dev Overflow', mirroring its comprehensive functionality. Questions and Answers creation, Voting system (upvote/downvote) for questions and answers, Answer submission, Advance search functionality with robust filtering capabilities, comprehensive user profiles, secured by Clerk authentication, MongoDB as the database backbone and more advance functionalities. ",
-    projectImg: "/git.png",
-    projectLink: "https://codeoverflow-five.vercel.app/",
-    projectCodeLink: "https://github.com/khalidkhankakar/codeoverflow",
+      "FireGrid is a powerful, real-time task management application designed for both personal use and team collaboration. With seamless drag-and-drop functionality, advanced fuzzy search, customizable task cards, and dynamic filters, managing your tasks has never been easier.",
+    projectImg: "/project2.jpg",
+    projectLink: "https://firegrid-khalidkhankakars-projects.vercel.app/",
+    projectCodeLink: "https://github.com/khalidkhankakar/Fire-Grid",
     projectTechs: ["/nextjs.png", "/typescript.png", "/reactjs.png", "/mongodb.png","/tailwindcss.png"],
   },
 
