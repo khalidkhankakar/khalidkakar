@@ -88,7 +88,7 @@ export const projectCardsArr = [
     projectImg: "/project1.png",
     projectLink: "https://codeoverflow-eta.vercel.app/",
     projectCodeLink: "https://github.com/khalidkhankakar/codeoverflow",
-    projectTechs: ["/nextjs.png", "/appwrite.png", "/reactjs.png","/tailwindcss.png"],
+    projectTechs: ['nextjs', 'reactjs', 'tailwindcss', 'mongodb',  'typescript', 'Clerk', 'nodejs', 'html', 'css', 'ai'],
   },
   {
     projectName: "🔥 FireGrid",
@@ -97,7 +97,7 @@ export const projectCardsArr = [
     projectImg: "/project2.jpg",
     projectLink: "https://firegrid-khalidkhankakars-projects.vercel.app/",
     projectCodeLink: "https://github.com/khalidkhankakar/Fire-Grid",
-    projectTechs: ["/nextjs.png", "/typescript.png", "/reactjs.png", "/mongodb.png","/tailwindcss.png"],
+    projectTechs: ['nextjs', 'reactjs', 'tailwindcss', 'drizzle ORM', 'postgresql', 'TS', 'Clerk', 'liveblocks', 'docker','Ai'],
   },
 
 ];

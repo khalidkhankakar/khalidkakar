@@ -5,6 +5,7 @@ import React from "react";
 import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
 import Link from "next/link";
 import Button from "../Button";
+import TagCard from "./tag-card";
 
 
 export function ProjectCard(
@@ -50,16 +51,14 @@ export function ProjectCard(
                         alt="thumbnail"
                     />
                 </CardItem>
-                <div className="flex mt-4 items-center space-x-1 md:space-x-2">
+                <div className="flex mt-4 flex-wrap items-center gap-1 justify-center">
                     {/* map techs */}
-                    {projectTechs.map((projectTechImg) => (
-                        <Image
-                            key={projectTechImg}
-                            src={projectTechImg}
-                            className="h-6 w-6  object-contain"
-                            width={28}
-                            height={28}
-                            alt={"img"}
+                    {projectTechs.map((tech) => (
+                        <TagCard
+                            id={tech}
+                            name={tech}
+                            key={tech}
+
                         />
                     ))}
                 </div>
