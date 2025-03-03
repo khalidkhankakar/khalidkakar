@@ -14,16 +14,16 @@ export const experinceSection = [
 
 export const blogCards = [
   {
-    title: "Optimizing performance in Reactjs applications",
-    desc: "One of the greatest strengths of React is its component-based architecture, which allows developers to build modular and reusable pieces of UI. ",
-    tags: ["#webdev", "#reactjs", "#javascript"],
+    title: "Optimizing performance in Reactjs apps",
+    desc: "As a React developer, ensuring that your applications run smoothly and efficiently is crucial for providing a great user experience. Performance optimization can make the difference between a fast, responsive app and one that feels sluggish.",
+    tags: ["ts", "reactjs", "javascript"],
     readTime: "7 min read",
     link:'https://dev.to/khalidkhankakar/optimizing-performance-in-react-applications-59k0'
   },
   {
-    title: "Building reusable components in Reactjs",
-    desc: "One of the greatest strengths of React is its component-based architecture, which allows developers to build modular and reusable pieces of UI. ",
-    tags: ["#webdev", "#reactjs", "#nextjs"],
+    title: "NextJs Server Actions",
+    desc: "Actions can only be run on the server. They are simple, regular, and asynchronous functions that are helpful for async tasks like file management, database requests (CRUD operations), and more.",
+    tags: ["javascript", "reactjs", "nextjs"],
     readTime: "10 min read",
     link:'https://dev.to/khalidkhankakar/building-reusable-components-in-react-4mj0'
   },

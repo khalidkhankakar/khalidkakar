@@ -16,14 +16,7 @@ const About = () => {
         </div>
         <div className="about-text">
           <TextAnimate className="text-[14px] font-light tracking-wide text-purple-1 md:text-[20px]" animation="fadeIn" by="word" once>
-            My name is Khalid Kakar, and I am a frontend web developer from
-            Pakistan with expertise in modern web technologies such as React.js
-            and Next.js. Leveraging these cutting-edge tools, I create scalable
-            and optimized web applications. 
-            
-            I have completed two internships as a React.js developer, and in the
-            past year, I worked as a frontend Next.js developer at Technocloud
-            Company in Lahore for six months.
+          Khalid Kakar is a Pakistani software engineer actively contributing to open-source projects. He is dedicated to making the web faster, more scalable, accessible, and optimized to deliver the best user experience. Previously, he worked as an intern specializing in Next.js and JavaScript development. You can explore Khalid's blog on his website and the Dev Community.
           </TextAnimate>
 
         </div>
