@@ -106,12 +106,12 @@ export const projectCardsArr = [
 export const socialContacts =[
   {
     name:'Linkedin',
-    link:'www.linkedin.com/in/khalid-khan-kakar',
+    link:'https://www.linkedin.com/in/khalid-khan-kakar1/',
     img:'/icons/linkedin.svg'
   },
   {
-    name:'Dev',
-    link:'https://dev.to/khalidkhankakar',
+    name:'X',
+    link:'https://x.com/KhalidKakar331?t=QCxf_GfmMUYYzP3pUgU-2g&s=09',
     img:'/icons/twitter.svg'
   },
   {
@@ -119,11 +119,6 @@ export const socialContacts =[
     link:'https://github.com/khalidkhankakar',
     img:'/icons/github.svg'
   },
-  {
-    name:'Whatsapp',
-    link:'/',
-    img:'/icons/whatsapp.svg'
-  }
 ]
 
 

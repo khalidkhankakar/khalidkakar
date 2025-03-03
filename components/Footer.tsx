@@ -1,5 +1,6 @@
 import { socialContacts } from "@/constant";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
@@ -8,12 +9,13 @@ const Footer = () => {
       <div>
         {/* text */}
         <p className="font-light">
-          Copyright All rights reserved &copy; 2024 Khalid Kakar
+          Copyright All rights reserved &copy; 2025 Khalid Kakar
         </p>
       </div>
       <div className="flex items-center justify-center space-x-3">
         {/* social links */}
         {socialContacts.map((social) => (
+          <Link  href={social.link} target="_blank">
           <Image
             src={social.img}
             key={social.name}
@@ -21,7 +23,8 @@ const Footer = () => {
             alt={social.name}
             width={20}
             height={20}
-          />
+            />
+            </Link>
         ))}
       </div>
     </footer>

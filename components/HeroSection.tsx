@@ -21,7 +21,7 @@ const HeroSection = () => {
         </p>
         <div className="mt-3 z-50 flex max-w-[95%] flex-col items-center justify-center space-y-4 md:flex-row  md:space-x-4 md:space-y-0  ">
           <Button label={"See my blog"}  href={"/blog"} />
-          <Button label={"See my work"} href={"/projects"} />
+          <Button label={"See my work"} href={"/#project"} />
 
         </div>
       </div>
