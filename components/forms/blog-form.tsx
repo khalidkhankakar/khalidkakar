@@ -202,7 +202,7 @@ const BlogForm = ({
             <FormItem>
               <FormLabel>Write your blog content here...</FormLabel>
               <FormControl>
-                <Editor initialValue={field.value as JSONContent} onChange={field.onChange} />
+                <Editor initialValue={field.value as any} onChange={field.onChange} />
               </FormControl>
               <FormMessage />
             </FormItem>

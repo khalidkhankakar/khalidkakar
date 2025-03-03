@@ -28,7 +28,7 @@ const Blog = () => {
       </div>
       <div className="flex items-center justify-center py-2 w-full">
 
-        <Button label={"Check More Blogs"} href={"https://dev.to/khalidkhankakar"} />
+        <Button label={"Check More"} href={"https://dev.to/khalidkhankakar"} />
       </div>
     </div>
   );
