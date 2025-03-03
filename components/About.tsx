@@ -5,7 +5,7 @@ import { TextAnimate } from "./magicui/text-animate";
 
 const About = () => {
   return (
-    <div id="#about" className="m-auto flex max-w-[90vw] flex-col items-start justify-start md:max-w-2xl lg:max-w-[80vw]">
+    <div id="about" className="m-auto flex max-w-[90vw] flex-col items-start justify-start md:max-w-2xl lg:max-w-[80vw]">
 
       <div className="rounded-xl  px-4 py-3 flex flex-col items-center justify-center">
         <div className=" relative w-full my-2 ">

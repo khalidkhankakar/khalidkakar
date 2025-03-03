@@ -33,12 +33,12 @@ const Navbar = () => {
       <div
         className={`bg-gradient z-50  fixed top-16 right-6  transition-all duration-300 overflow-hidden  ${isOpen ? 'flex' : 'hidden'} rounded-xl p-3 w-[300px] flex-col  space-y-3 border-[0.5px] border-gray-600`}
       >
-        <Link className="group" href={"#about"}>
+        <Link className="group" href={"/"}>
           <div className=" flex items-center space-x-3 rounded-xl p-2 transition-all">
             <HomeIcon size={30} />
             <div>
               <p className="text-white group-hover:text-gray-300 font-semibold uppercase">Home</p>
-              <p className="text-xs text-gray-400">Welcome to my work</p>
+              <p className="text-xs text-gray-400">Welcome to my web</p>
             </div>
           </div>
           <div className="group-hover:block hidden  transition-all duration-1000  ease-in-out delay-1   h-[1px] w-full bg-gray-400 " />
@@ -49,30 +49,30 @@ const Navbar = () => {
             <BookOpen size={30} />
             <div>
               <p className="text-white group-hover:text-gray-300 font-semibold uppercase">About</p>
-              <p className="text-xs text-gray-400">Welcome to my work</p>
+              <p className="text-xs text-gray-400">Know about me</p>
             </div>
           </div>
           <div className="group-hover:block hidden  transition-all duration-1000  ease-in-out delay-1   h-[1px] w-full bg-gray-400 " />
         </Link>
 
 
-        <Link className="group" href={"#about"}>
+        <Link className="group" href={"#project"}>
           <div className=" flex items-center space-x-3 rounded-xl p-2 transition-all">
             <UserRound size={30} />
             <div>
               <p className="text-white group-hover:text-gray-300 font-semibold uppercase">Projects</p>
-              <p className="text-xs text-gray-400">Welcome to my work</p>
+              <p className="text-xs text-gray-400">Checkout my work</p>
             </div>
           </div>
           <div className="group-hover:block hidden  transition-all duration-1000  ease-in-out delay-1   h-[1px] w-full bg-gray-400 " />
         </Link>
 
-        <Link className="group" href={"#about"}>
+        <Link className="group" href={"#contact"}>
           <div className=" flex items-center space-x-3 rounded-xl p-2 transition-all">
             <Phone size={30} />
             <div>
               <p className="text-white group-hover:text-gray-300 font-semibold uppercase">Contact</p>
-              <p className="text-xs text-gray-400">Welcome to my work</p>
+              <p className="text-xs text-gray-400">Get in touch</p>
             </div>
           </div>
           <div className="group-hover:block hidden  transition-all duration-1000  ease-in-out delay-1   h-[1px] w-full bg-gray-400 " />

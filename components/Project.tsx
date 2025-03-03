@@ -4,7 +4,7 @@ import { ProjectCard } from "./cards/project-card";
 
 const Project = () => {
   return (
-    <div className="m-auto my-8 flex max-w-[90vw] flex-col items-start justify-start md:max-w-2xl lg:max-w-[80vw]">
+    <div id="project" className="m-auto my-8 flex max-w-[90vw] flex-col items-start justify-start md:max-w-2xl lg:max-w-[80vw]">
 
       
 
