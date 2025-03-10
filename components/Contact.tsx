@@ -5,9 +5,6 @@ import { SparklesCore } from "./ui/sparkles";
 const Contact = () => {
   return (
     <div id="contact" className="relative m-auto my-8 flex max-w-[90vw] flex-col items-start justify-start md:max-w-2xl lg:max-w-[80vw]">
-
-     
-
       <div className="max-w-[90vw] text-white md:max-w-2xl lg:max-w-[80vw] mx-auto">
         <h1 className="max-w-[95%] text-center text-[36px] font-semibold leading-[2.5rem] tracking-tight md:text-[48px] md:leading-[3.2rem]">
           Take Your Digital <span className="text-purple-2 font-lobster">Presence</span> to

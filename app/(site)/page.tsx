@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import { Achievements } from "@/components/Achievement";
 import Blog from "@/components/Blog";
 import Contact from "@/components/Contact";
 import DevStack from "@/components/DevStack";
@@ -54,6 +55,16 @@ const TIMELINE_DATA = [
     content: <Project />
   },
 
+  {
+    title: (
+      <BoxReveal boxColor={"#f4ac24 "} duration={0.5}>
+        <h2 className="h2-bold mb-4   text-white">
+          My <span className="text-orange-1 font-lobster">Achievements</span>
+        </h2>
+      </BoxReveal>
+    ),
+    content: <Achievements />
+  },
   {
     title: (
       <BoxReveal boxColor={"#da1beb "} duration={0.5}>
