@@ -48,7 +48,7 @@ const BlogDetails = ({title,content,tags,imageUrl,createdAt}:Props) => {
                     <Image src={'/profile.jpg'} width={100} height={100} alt="css" className='rounded-full w-16 h-16' />
                     <div className='w-full md:w-1/2 '>
                         <p className='text-lg font-bold'>Khalid Kakar</p>
-                        <p className='text-xs md:text-sm  opacity-50'>Matt is a well-regarded TypeScript expert known for his ability to demystify complex TypeScript concepts.</p>
+                        <p className='text-xs md:text-sm  opacity-50'>Khalid simplifies complex modern web development topics into simple words with expertise in Next.js and React.js</p>
                     </div>
                 </div>
 

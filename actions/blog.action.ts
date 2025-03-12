@@ -79,16 +79,28 @@ export const createBlog = async (formData: FormData) => {
     }
 }
 
+
 export const getBlog = async (slug: string) => {
+   try {
     await connectDB();
     const blog = await Blog.findOne({ slug }).populate('tags', 'name')
     return JSON.parse(JSON.stringify(blog));
+   } catch (error) {
+    console.log(error)
+    return { success: false, message: "failed to get blog" }
+   }
 }
 
 export const getAllBlogs = async () => {
-    await connectDB();
+    try {
+      await connectDB();
     const blogs = await Blog.find().populate('tags', 'name').select('-content')
-    return blogs;
+    return {success: true,data:blogs,  message: "Blogs fetched successfully" };
+    } catch (error) {
+      console.log(error)
+    return { success: false,data:[],  message: "Unable to get blogs" }
+      
+    }
 }
 
 export const editBlog = async (blogId: string, formData: FormData) => {
