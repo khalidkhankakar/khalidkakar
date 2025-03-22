@@ -7,6 +7,7 @@ import connectDB from "@/lib/mongoose";
 import { blogSchema } from "@/lib/validation";
 import { put } from "@vercel/blob";
 import mongoose from "mongoose";
+import { revalidatePath } from "next/cache";
 import slugify from "slugify";
 
 
@@ -70,7 +71,7 @@ export const createBlog = async (formData: FormData) => {
                 blog: createNewBlog._id
             })
         }
-
+        revalidatePath('/blog')
         return { success: true, message: "Blog created successfully" }
     } catch (error) {
         console.log(error)
@@ -218,6 +219,7 @@ export const editBlog = async (blogId: string, formData: FormData) => {
 
     
           await existingBlog.save();
+          revalidatePath('/blog')
         return { success: true, message: "Blog created successfully" }
     } catch (error) {
         console.log(error)
