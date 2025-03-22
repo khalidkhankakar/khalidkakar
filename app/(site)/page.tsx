@@ -12,6 +12,7 @@ import { Timeline } from "@/components/ui/timeline";
 
 const TIMELINE_DATA = [
   {
+    id:1,
     title: (<BoxReveal boxColor={"#12fc37"} duration={0.5}>
       <h2 className="h2-bold mb-4   text-white">
         Explore <span className="text-green-1 font-lobster">Khalid&apos;s journey</span>
@@ -20,6 +21,7 @@ const TIMELINE_DATA = [
     content: <About />
   },
   {
+    id:2,
     title: (<BoxReveal boxColor={"#da1beb"} duration={0.5}>
       <h2 className="h2-bold mb-4   text-white">
         My <span className="text-pink-1 font-lobster">Work Experience</span>
@@ -28,6 +30,7 @@ const TIMELINE_DATA = [
     content: <Work />
   },
   {
+    id:3,
     title: (<BoxReveal boxColor={"#00fcce"} duration={0.5}>
       <h2 className="h2-bold mb-4   text-white">
         Latest <span className="text-cyan-1 font-lobster">Blog Post</span>
@@ -36,6 +39,7 @@ const TIMELINE_DATA = [
     content: <Blog />
   },
   {
+    id:4,
     title: (<BoxReveal boxColor={"#f4ac24"} duration={0.5}>
       <h2 className="h2-bold mb-4   text-white">
         My <span className="text-orange-1 font-lobster">Dev Stack</span>
@@ -45,6 +49,7 @@ const TIMELINE_DATA = [
   },
 
   {
+    id:5,
     title: (
       <BoxReveal boxColor={"#da1beb "} duration={0.5}>
         <h2 className="h2-bold mb-4   text-white">
@@ -56,6 +61,7 @@ const TIMELINE_DATA = [
   },
 
   {
+    id:6,
     title: (
       <BoxReveal boxColor={"#f4ac24 "} duration={0.5}>
         <h2 className="h2-bold mb-4   text-white">
@@ -66,6 +72,7 @@ const TIMELINE_DATA = [
     content: <Achievements />
   },
   {
+    id:7,
     title: (
       <BoxReveal boxColor={"#da1beb "} duration={0.5}>
         <h2 className="h2-bold mb-4   text-white">

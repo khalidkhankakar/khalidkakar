@@ -17,7 +17,7 @@ const lobster = Lobster({
 
 export const metadata: Metadata = {
   title: "Khalid kakar",
-  description: "Professional developer from Balochistan",
+  description: "Khalid Khan Kakar – A skilled Frontend Developer specializing in React.js, Next.js, and modern web technologies. With expertise in building scalable web applications, Khalid has developed projects like a Stack Overflow clone, a social media web app, and an AI-powered chatbot. He excels in integrating AI models, optimizing performance, and implementing real-time features using tools like NextAuth, Drizzle ORM, PostgreSQL, and Firebase. Passionate about open-source contributions, MERN stack development, and cutting-edge web solutions. Explore Khalid’s work on GitHub and LinkedIn to see his latest innovations.",
 };
 
 export default function RootLayout({

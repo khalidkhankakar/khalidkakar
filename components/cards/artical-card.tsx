@@ -20,9 +20,9 @@ export default function ArticalCard({slug,description, title, imageUrl, tags}: A
           <Image
             src={imageUrl} // Ensure this path is correct
             alt="Enums"
-            layout="fill"
-            objectFit="cover"
-          />
+            width={700}
+            height={700}
+            className="object-cover h-full w-full"          />
         </div>
       </div>
 
