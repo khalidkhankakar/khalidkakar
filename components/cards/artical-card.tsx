@@ -13,7 +13,7 @@ interface ArticalCardProps {
 export default function ArticalCard({slug,description, title, imageUrl, tags}: ArticalCardProps) {
 
   return (
-    <div className="flex flex-col w-full md:flex-row items-center bg-dark-2/80 border  text-white p-4 md:p-6 rounded-sm shadow-lg  mx-auto">
+    <div className="flex flex-col w-2/3 md:flex-row items-center bg-dark-2/80 border  text-white p-4 md:p-6 rounded-sm shadow-lg  mx-auto">
       {/* Image */}
       <div className="w-full md:w-1/3">
         <div className="relative w-full h-60 rounded-lg overflow-hidden">

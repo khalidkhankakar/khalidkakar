@@ -16,9 +16,9 @@ const BlogCard = ({ title, desc, tags , readTime,link}:{title:string,desc:string
           </p>
         </div>
 
-        <div className="flex items-center justify-around w-full  mt-10 ">
+        <div className="flex items-center flex-wrap justify-around w-full gap-2  mt-10 ">
             {/* map the tags */}
-            <div className="flex space-x-1  items-center justify-end">
+            <div className="flex  gap-1 flex-wrap  items-center justify-start md:justify-end">
                { tags.map((tag)=>(
             <TagCard id={tag} name={tag} key={tag} />
  

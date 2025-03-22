@@ -10,10 +10,9 @@ const page = async () => {
   if (blogs.data.length <= 0) {
     return (<div className='min-h-screen overflow-y-auto max-w-[85%] lg:max-w-4xl mx-auto  py-20 text-white '>No blog found</div>);
   };
-  console.log(blogs);
   return (
     <HeroHighlight className='w-full'>
-      <div className='min-h-screen overflow-y-auto max-w-[85%] lg:max-w-4xl mx-auto   py-20  text-white '>
+      <div className='blog-scroll h-screen overflow-y-auto border w-full mx-auto   py-20  text-white '>
         <div className='flex items-center flex-col gap-y-3 '>
           {
             blogs?.data?.map((blog: GetBlogType,index) => (

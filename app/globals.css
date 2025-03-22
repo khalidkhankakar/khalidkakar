@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* For modern browsers */
+.blog-scroll {
+  overflow: auto; /* Enables scrolling */
+  scrollbar-width: none; /* Hides scrollbar in Firefox */
+}
+
+/* For WebKit browsers (Chrome, Safari, Edge) */
+.blog-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+
 html {
   scroll-behavior: smooth;
 }
