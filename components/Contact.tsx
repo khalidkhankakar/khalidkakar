@@ -1,6 +1,9 @@
-import Button from "./Button";
+import Link from "next/link";
 import { BoxReveal } from "./magicui/box-reveal";
 import { SparklesCore } from "./ui/sparkles";
+import { Mails, MessageCircle } from "lucide-react";
+import { Button } from "./ui/button";
+import Image from "next/image";
 
 const Contact = () => {
   return (
@@ -14,7 +17,27 @@ const Contact = () => {
           Get in touch to see how I can help you reach your objectives
         </p>
         <div className="mt-3 flex max-w-[95%] flex-col items-center justify-center space-y-4 md:flex-row md:space-x-4 md:space-y-0">
-          <Button href="mailto:khalidkhankakar2468@gmail.com" label="Contact Me" />
+
+        
+          
+          <Button className="z-50 rounded-xl py-2 bg-white hover:bg-green-200 font-semibold " >
+            <Link href="https://wa.me/923708218757" target="_blank" rel="noopener noreferrer">
+            <div className="flex items-center gap-2 text-green-600 hover:underline">
+            <Image src={'/icons/whatsapp.svg'} alt="whatsapp" width={20} height={20} />
+              <span className="text-sm ">Whatsapp Me →</span>
+            </div>
+            </Link>
+          </Button>
+
+          <Button className="z-50 rounded-xl py-2 bg-white hover:bg-blue-200 font-semibold " >
+            <Link href="mailto:khalidkhankakar2468@gmail.com" target="_blank" rel="noopener noreferrer">
+            <div className="flex items-center gap-2 text-blue-600 hover:underline">
+            <Image src={'/icons/gmail.svg'} alt="gmail" width={20} height={20} />
+              <span className="text-sm">Mail Me →</span>
+            </div>
+            </Link>
+          </Button>
+
         </div>
       </div>
       <SparklesCore
