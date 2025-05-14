@@ -174,4 +174,11 @@ const prodictivityStack = [
   "canva"
 ];
 
-export { frontendEndStack, backendEndStack, prodictivityStack };
+const gifUrls = [
+  "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGRlbXlnOGZ5dTRsMWNjMXA0Ymp6aTFhbGpkeXkweTY4MWV6ZWNvYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/abt3O3BEwR6wg/giphy.gif",
+  "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGVwZzFzdWFqNzNwbHliMjV6OHY3bndoNjVtZzVjMXgxNW40bnpuaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tj5v01sQumzCg/giphy.gif",
+  "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3NqNHY4OTdjMGowZHN0dDVtaWhyeTI2eDV5a24wM2kzcTEzYzd6NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kI3EDw9u38dI6jYvVY/giphy.gif",
+  "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExanQ2N2hreHc3MWg2dWpxOGtiN2R0d2ZxdnJ4em03ZmJnMzV0Mm05ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Qh6aPCssL8J8I/giphy.gif",
+]
+
+export { frontendEndStack, backendEndStack, prodictivityStack, gifUrls };
