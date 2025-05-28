@@ -6,9 +6,6 @@ import DevStack from "@/components/DevStack";
 import HeroSection from "@/components/HeroSection";
 import Project from "@/components/Project";
 import Work from "@/components/Work";
-import { PremiumScene } from "@/components/cube/premium-scene";
-import { Scene3D } from "@/components/cube/scene-3d";
-
 import { BoxReveal } from "@/components/magicui/box-reveal";
 import TextGif from "@/components/ui/text-gif";
 import { Timeline } from "@/components/ui/timeline";
