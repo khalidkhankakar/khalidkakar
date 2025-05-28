@@ -6,6 +6,8 @@ import DevStack from "@/components/DevStack";
 import HeroSection from "@/components/HeroSection";
 import Project from "@/components/Project";
 import Work from "@/components/Work";
+import { PremiumScene } from "@/components/cube/premium-scene";
+import { Scene3D } from "@/components/cube/scene-3d";
 
 import { BoxReveal } from "@/components/magicui/box-reveal";
 import TextGif from "@/components/ui/text-gif";
@@ -130,10 +132,11 @@ const TIMELINE_DATA = [
 
 const Home = () => {
   return (
-    <main>
+   <main>
       <HeroSection />
       <Timeline data={TIMELINE_DATA} />
     </main>
+
   );
 };
 

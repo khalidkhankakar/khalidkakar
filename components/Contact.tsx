@@ -1,12 +1,12 @@
 import Link from "next/link";
-import { BoxReveal } from "./magicui/box-reveal";
 import { SparklesCore } from "./ui/sparkles";
-import { Mails, MessageCircle } from "lucide-react";
 import { Button } from "./ui/button";
 import Image from "next/image";
+import { PremiumScene } from "./cube/premium-scene";
 
 const Contact = () => {
   return (
+    <div className="flex flex-col-reverse items-center md:flex-row">
     <div id="contact" className="relative m-auto my-8 flex max-w-[90vw] flex-col items-start justify-start md:max-w-2xl lg:max-w-[80vw]">
       <div className="max-w-[90vw] text-white md:max-w-2xl lg:max-w-[80vw] mx-auto">
         <h1 className="max-w-[95%] text-center text-[36px] font-semibold leading-[2.5rem] tracking-tight md:text-[48px] md:leading-[3.2rem]">
@@ -40,6 +40,7 @@ const Contact = () => {
 
         </div>
       </div>
+    </div>
       <SparklesCore
         id="tsparticlesfullpage"
         background="transparent"
@@ -49,6 +50,7 @@ const Contact = () => {
         className="absolute h-full w-full"
         particleColor="#FFFFFF"
       />
+    <PremiumScene />
     </div>
   );
 };
